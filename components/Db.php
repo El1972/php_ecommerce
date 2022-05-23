@@ -5,7 +5,7 @@ class Db
 
     public static function getDbConnection()
     {
-        $dsn = 'mysql:host=localhost;dbname=mosh';
+        $dsn = 'mysql:host=localhost;dbname=zinchenko_ecommerce';
         $username = 'root';
         $password = 'root';
 

@@ -12,7 +12,7 @@ class News
 
         $i = 0;
 
-        $news = 'SELECT * FROM person';
+        $news = 'SELECT * FROM products';
         $query = $db->query($news);
         while ($row = $query->fetch()) {
             $items[$i]['id'] = $row['0'];

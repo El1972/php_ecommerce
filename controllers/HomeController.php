@@ -1,5 +1,7 @@
 <?php
 
+include_once ROOT . '/models/News.php';
+
 class HomeController
 {
 
