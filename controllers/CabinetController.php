@@ -13,7 +13,7 @@ class CabinetController
 
         $user = User::getUserById($userId);
 
-        require_once ROOT . '/views/cabinet/view.php';
+        require_once ROOT . '/views/cabinet/cabinet_view.php';
 
         return true;
 

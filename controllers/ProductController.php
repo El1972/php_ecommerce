@@ -6,7 +6,7 @@ class ProductController
     public function actionIndex()
     {
 
-        require_once ROOT . '/views/product/view.php';
+        require_once ROOT . '/views/product/product.php';
 
         return true;
     }
@@ -14,7 +14,7 @@ class ProductController
     public function actionList($id)
     {
 
-        require_once ROOT . '/views/product/view.php';
+        require_once ROOT . '/views/product/product.php';
 
         return true;
     }

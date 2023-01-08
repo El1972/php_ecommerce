@@ -158,11 +158,39 @@
 
 
 
-    <script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.scrollUp.min.js"></script>
-	<script src="js/price-range.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/template/js/jquery.js"></script>
+	<script src="/template/js/bootstrap.min.js"></script>
+	<script src="/template/js/jquery.scrollUp.min.js"></script>
+	<script src="/template/js/price-range.js"></script>
+    <script src="/template/js/jquery.prettyPhoto.js"></script>
+    <script src="/template/js/main.js"></script>
+	<script>
+
+		$(document).ready(function(){
+			// it says that code inside, has to be implemented
+			// only after lading of the whole of the document
+			$(".add-to-cart").click(function(){
+				// clicking on each button with the
+				// class ".add-to-cart" to perform code below
+				var id = $(this).attr("data-id");
+				// let's you know which exact id that
+				// is assigned to the button has been clicked on. That id is being added
+				// to the cart (korzina). After that we're forming asynchronous call. It
+				// consists of 3 parts:
+				// address, parameters and function that'll handle
+				// the result. Parameters here are empty, because id we'll pass in a
+				// request (v ssilke)
+				$.post("/cart/addAjax/" + id,
+				{
+					//... parameters
+				},
+				function(data){
+					$("#cart-count").html(data);
+				})
+				return false;
+			})
+		})
+
+	</script>
 </body>
 </html>

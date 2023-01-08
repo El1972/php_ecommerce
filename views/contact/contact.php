@@ -5,6 +5,6 @@ require_once ROOT . '/views/layout/header.php'
 
 
 
-   <?php
+<?php
 require_once ROOT . '/views/layout/footer.php'
 ?>

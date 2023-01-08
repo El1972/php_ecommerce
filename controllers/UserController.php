@@ -114,7 +114,7 @@ class UserController
             }
         }
 
-        require_once ROOT . '/views/login/view.php';
+        require_once ROOT . '/views/login/login.php';
 
         return true;
 
